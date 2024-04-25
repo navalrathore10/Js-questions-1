@@ -2,142 +2,173 @@
 <html lang="en">
 
 <head>
-    <title>Test Questions - 1</title>
+    <title>Js Function questions</title>
 </head>
 
 <body>
+
+    <h1>Js Function Questions</h1>
+    <hr>
+    <p>1: Create a function to find the Second smallest element in an array.</p>
+    <p>2: Create a function to find a unique elements from an array.</p>
+    <p>3: Create a function to find the union of two arrays.</p>
+    <p>4: Create a function to find the intersection of the two arrays.</p>
+    <p>5: Create a function that takes an array of strings and returns the longest string in the array.</p>
+    <p>6: Create a function to create array of negative number from given array.</p>
+    <p>7: Create a function to remove elements from an array shorter than length 6.</p>
+    <p>8: Create a function to find the average of all elements in an array.</p>
+    <p>9: Create a function that finds sum of the squares of numbers within a given range.</p>
+    <p>10: Create a function that finds the sum of numbers within a given range But until the sum reaches a limit.</p>
+
+    <hr>
+    <h4>Note:- <p style="font-weight: 100; font-size: 12px;">Open Developer Tool and then Uncomment the Question You want to see.(All the questions are commented out.)</p></h4>
+
+
     <script>
 
 
-
-        // Sorry I forgot to use function in each and every question.
-
+        // 1:------Create a function to find the Second smallest element in an array.--------------------------------------- Completed
 
 
-
-        //------Create a function to find the Second smallest element in an array.
-        //------[5, 7, 9, 1, 8, 10, 54, 14, 35, 88, 44]
-
-        // var arr1 = [5, 7, 9, 1, 8, 10, 54, 14, 35, 88, 44];
-        // var smallest,secsmall;
-        // for(i=0;i<(arr1.length-1);i++){
-        //     if(arr1[i]<arr1[i+1]){
-        //         smallest = arr1[i];
-        //     }
-        //     if(smallest>arr1[i+1]){
-        //         secsmall = smallest;
-        //     }
-        // }
-        // console.log(secsmall);
-            //-------------------------------------------------- Done using Function later ---- Completed
         // function secondNum(arr) {
-        //     var firstsmall = arr[0];
-        //     var secondsmall = arr[0];
+        //     var smallest = arr[0];
+        //     var secondsmall = arr[1];
         //     for (var i = 0; i < arr.length; i++) {
-        //         if (arr[i] < firstsmall) {
-        //             secondsmall = firstsmall;
-        //             firstsmall = arr[i];
-        //         } else if (arr[i] < secondsmall && arr[i] !== firstsmall) {
+        //         if (arr[i] < smallest) {
+        //             secondsmall = smallest;
+        //             smallest = arr[i];
+        //         } else if (arr[i] < secondsmall && arr[i] !== smallest) {
         //             secondsmall = arr[i];
         //         }
         //     }
         //     return secondsmall;
         // }
-        // var a = [5, 7, 9, 1, 8, 10, 54, 14, 35, 88, 44];
-        // console.log(secondNum(a));
+        // // var a = [5, 7, 9, 1, 8, 10, 54, 14, 35, 88, 44]; //- Take any array .
+        // var a = [1, 11, 33, 4, 5, 6, 7, 8, 9];
+        // console.log(a);
+        // console.log("Second Smallest Number from the given array  is ", secondNum(a));
 
-        //------Create a function to find a unique elements from an array.
-        //------[54, 7, 9, 1, 8, 7, 54, 8, 5, 88, 44] 
 
-        // var arr2 = [54, 7, 9, 1, 8, 7, 54, 8, 5, 88, 44];
-        // var arr2new = [];
-        // for (i=0;i<arr2.length;i++) {
 
-        //     arr2new.push(arr2.pop());
-        //     if (arr2.indexOf(i) != -1) {
-        //         arr2new.push(i);
+        // 2:------Create a function to find a unique elements from an array.--------------------------------------- Completed
+
+        // function uniqueNum(a){
+        //     var uniqueArr=[];
+        //     for(var i of a){
+        //         if(!uniqueArr.includes(i)){
+        //             uniqueArr.push(i);
+        //         }
         //     }
-        //     console.log(arr2new);
-        //     // if(arr2new.indexOf(i) == -1 ){
-        //     //     arr2new.push(i);
-        //     // }
+        //     return uniqueArr;
         // }
-        // console.log(arr2);
-        // console.log(arr2new);
+        // var arr2=[54, 24, 9, 1, 8, 7, 54, 8, 5, 88, 24];
+        // var uniqueArray = uniqueNum(arr2);
+        // console.log(arr2)
+        // console.log("UniqueArray is :",uniqueArray);
 
-        //------ Create a function to find the union of two arrays. --------------------------------------- Completed 
-        //---------[1, 2, 3, 4, 5] and [3, 4, 5, 6, 7] 
 
-        // var arr31= [1, 2, 3, 4, 5];
-        // var arr32 = [3, 4, 5, 6, 7];
-        // var newarr3 = [];
-        // for (i=0;i<=arr31.length-1;i++){
-        //     newarr3.push(arr31[i]);
-        // }
-        // for (i=0;i<arr32.length;i++){
-        //     if(newarr3.indexOf(i) != -1){
-        //         newarr3.push(arr32[i]);
+
+        // 3:------ Create a function to find the union of two arrays. --------------------------------------- Completed
+        //---------[1, 2, 3, 4, 5] and [3, 4, 5, 6, 7]
+
+
+        // function uniqueArr(a, b) {
+        //     var newArr3 = [];
+        //     for (var i of a) {
+        //         newArr3.push(i);
         //     }
-        // }
-        // console.log(newarr3);
-
-        //---------Create a function to find the intersection of the two arrays. ------------------------- Completed
-        //-----[1, 2, 3, 4, 5] and [3, 4, 5, 6, 7]
-
-        // var arr41 = [1, 2, 3, 4, 5];
-        // var arr42 = [3, 4, 5, 6, 7];
-        // var newarr4 = [];
-        // for (n of arr41) {
-        //     if (arr42.indexOf(n) != -1) {
-        //         newarr4.push(n);
+        //     for (var j of b) {
+        //         if (!newArr3.includes(j)) {
+        //             newArr3.push(j);
+        //         }
         //     }
+        //     return newArr3;
         // }
-        // console.log(newarr4);
+        // var a = [1, 2, 3, 4, 5];
+        // var b = [3, 4, 5, 6, 7];
+        // console.log(uniqueArr(a, b));
 
-        //------------- Create a function that takes an array of strings and returns the longest string in the array. 
-        //-------["apple", "banana", "cherry", "blueberry", mango, sky]
 
-        // var arr5 = ["apple", "banana", "cherry", "blueberry", "mango", "sky"];
-        // var largest = "";
-        // for(i=0;i<arr5.length;i++){
-        //     if(arr5[i].length > arr5[i+1].length){
-        //         largest = arr5[i];
+
+        // 4:---------Create a function to find the intersection of the two arrays. ------------------------- Completed
+
+        // function commonArray(a, b) {
+        //     var newarr4 = [];
+        //     for (n of a) {
+        //         if (b.includes(n)) {
+        //             newarr4.push(n);
+        //         }
         //     }
-        //     else(largest = arr5[i])
+        //     return newarr4;
         // }
-        // console.log(arr5);
-        // console.log(largest);
+        // var a=[1,2,3,4,5];
+        // var b=[3,4,5,6,7];
+        // console.log(commonArray(a,b));
 
-        //--------Create a function to create array of negative number from given array. ----------------------- Completed
-        //--------[-3, 5, -7, -3, 2, -1, 8, 10]
 
-        // var arr6=[-3, 5, -7, -3, 2, -1, 8, 10];
-        // var negarr=[];
-        // for(i=0;i<arr6.length;i++){
-        //     if(arr6[i]<0){
-        //         negarr.push(arr6[i]);
+
+        // 5:------------- Create a function that takes an array of strings and returns the longest string in the array.---------- Completed
+
+
+        // function stringLength(arr5) {
+        //     var longestString = arr5[0];
+        //     for (i = 0; i < arr5.length; i++) {
+        //         currentString = arr5[i];
+        //         if(currentString.length>longestString.length){
+        //             longestString=currentString;
+        //         }
         //     }
+        //     return longestString;
         // }
+        // var arr5 = ["apple", "banana", "cherry", "blue", "mangodolly", "sky"];
+        // console.log("The largest name is :", stringLength(arr5));
+
+
+
+        // 6:--------Create a function to create array of negative number from given array. ----------------------- Completed
+
+
+        // function negativeArr(arr6) {
+        //     var negArr = [];
+        //     for (i = 0; i < arr6.length; i++) {
+        //         if (arr6[i] < 0) {
+        //             negArr.push(arr6[i]);
+        //         }
+        //     }
+        //     return negArr;
+        // }
+        // var arr6 = [-3, 5, -7, -3, 2, -1, 8, 10, -22, 22];
         // console.log(arr6);
-        // console.log(negarr);
+        // console.log("Negative Array :", negativeArr(arr6));
 
-        //---------Create a function to remove elements from an array shorter than length 6.
-        //---------["apple", "banana", "cherry", "blueberry", mango, sky] 
 
-        // var arr7 = ["apple", "banana", "cherry", "blueberry", "mango", "sky"];
-        // console.log(arr7);
 
-        // for(i=0;i<arr7.length;i++){
-        //     if(arr7[i].length < 6){
-        //         arr7.pop();
+        // 7:---------Create a function to remove elements from an array shorter than length 6. ----------------Completed
+
+
+
+        // function removeShorter(arr7) {
+        //     const limit = 6;
+        //     for (let i = arr7.length - 1; i >= 0; i--) {
+        //         if (arr7[i].length < limit) {
+        //             arr7.splice(i, 1); // remove 1 element from index i
+        //         }
         //     }
+        //     return arr7;
         // }
+
+        // var arr7 = ["apple", "banana", "cherry", "blueberry", "mango", "sky","mangodolly"];
         // console.log(arr7);
+        // console.log(removeShorter(arr7));
 
-        //--------Create a function to find the average of all elements in an array. ------------------   Completed
-        //-----[-3, 5, -7, -3, 2, -1, 8, 10]
 
-        // var arr8=[-3, 5, -7, -3, 2, -1, 8, 10];
+
+
+        // 8:--------Create a function to find the average of all elements in an array. ------------------   Completed
+
+
+        // var arr8=[-3, 5, -7, -3, 2, -1, 8, 10]; //--Take any array.
+        // var arr8=[10,20,30,40];
         // function average(arr8){
         //     var sum = 0;
         //     for(i=0;i<arr8.length;i++){
@@ -149,9 +180,38 @@
         // console.log(arr8);
         // console.log(average(arr8));
 
-        //-------Create a function that finds sum of the squares of numbers within a given range. 
 
-        
+        // 9:-------Create a function that finds sum of the squares of numbers within a given range. ----------- Completed
+        //---
+
+        // function sumOfSquare(a,b){
+        //     var sum =0;
+        //     for(var i =a;i<=b;i++){
+        //         sum+=(i*i);
+        //     }
+        //     // console.log(sum);
+        //     return sum;
+        // }
+        // console.log(sumOfSquare(10,11));
+
+
+        // 10:--------Create a function that finds the sum of numbers within a given range But until the sum reaches a limit. -------- Completed
+
+        // function limitedSumOfNumbers(a, b) {
+        //     var sum = 0;
+        //     var limit = 232 ;
+        //     for (var i = a; i <= b; i++) {
+        //         if (sum+i > limit) {
+        //             return sum;
+        //         }
+        //         sum += i;
+        //     }
+        //     return sum;
+        // }
+
+        // console.log(limitedSumOfNumbers(1, 22));
+
+
 
     </script>
 </body>
